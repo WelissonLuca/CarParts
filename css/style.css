@@ -11,6 +11,7 @@
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto',sans-serif;
+    text-transform: uppercase;
 }
 a{
     text-decoration: none;
@@ -24,6 +25,7 @@ body {
     margin: 0 auto;
 }
 .button{
+    font-family: 'Roboto',sans-serif;
     padding: 20px 30px;
     background: #1e83ec;
     border-radius: 8px;
@@ -86,6 +88,7 @@ body {
     margin-right: 40px;
 }
 .bar-content p{
+    font-family: 'Nunito',sans-serif;
     font-size: 18px;
     color: var(--primary-color-);
 }
@@ -130,4 +133,41 @@ body {
 }
 .navbar .utils i:hover{
     color: #f6c950;
+}
+
+/* Banner */ 
+
+#banner {
+    background: #2c2c2c;
+    
+}
+.banner {
+    height: 790px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner h2{
+    font-size: 42px;
+    color: #f8c12c;
+    margin-bottom: 20px;
+}
+.banner h1{
+    font-size: 62px;
+    color: #fff;
+}
+.banner span{
+    color: #f8c12c;
+    margin-bottom: 20px;
+}
+.banner p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    line-height: 26px;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+.banner .button {
+    max-width: 14%;
 }
