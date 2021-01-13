@@ -95,3 +95,39 @@ body {
     color: #888888;
     font-size: 14px;
 } 
+/* navbar */
+.navbar{
+    width: 100%;
+    background: #1d1d1d;
+    padding: 30px 0;
+}
+.navbar nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu a {
+    padding: 4px 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    margin-right: 20px;
+    border-bottom: 3px solid #1d1d1d;
+    transition: color 300ms;
+
+}
+.navbar .menu a:hover{
+    color: #f6c950;
+}
+.navbar .menu a.active{
+     border-bottom: 3px solid #f6c950;
+}
+.navbar .utils i{
+    color: #fff;
+    margin-right: 30px;
+    transition: color 300ms;
+}
+.navbar .utils i:hover{
+    color: #f6c950;
+}
