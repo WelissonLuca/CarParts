@@ -26,11 +26,11 @@ body {
 }
 .button{
     font-family: 'Roboto',sans-serif;
-    padding: 20px 30px;
+    padding: 16px 30px;
     background: #1e83ec;
     border-radius: 8px;
     color: #fff;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 18px;
     transition: background 300ms;
 }
@@ -263,4 +263,38 @@ body {
 .video h2{
     font-size: 16px;
     font-weight: 500;
+}
+
+/* offer */
+
+#offer{
+    background: #191414;
+
+}
+.offer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+.offer-content div{
+    max-width: 76%;
+}
+.offer-content h2{
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.offer-content h2 span{
+    color: #f8c12c;
+}
+.offer-content p{
+    font-family: 'Nunito',sans-serif;
+    font-size: 14px;
+    color: #fff;
+    
+}
+.offer-content .button{
+    padding: 16px 40px;
+    font-size: 16px;
 }
