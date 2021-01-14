@@ -42,10 +42,12 @@ body {
     color: #9b9b9b;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 .title{
     color: var(--primary-color-);
-    font-size: 42px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
@@ -159,6 +161,7 @@ body {
     text-transform: uppercase;
     font-family: 'Roboto',sans-serif;
     font-weight: 500;
+    font-size: 16px;
     margin-right: 20px;
     border-bottom: 3px solid #1d1d1d;
     transition: color 300ms;
@@ -192,12 +195,12 @@ body {
     justify-content: center;
 }
 .banner h2{
-    font-size: 52px;
+    font-size: 32px;
     color: #f8c12c;
 
 }
 .banner h1{
-    font-size: 72px;
+    font-size: 52px;
     color: #fff;
 }
 .banner span{
@@ -206,7 +209,7 @@ body {
 }
 .banner p{
     font-family: 'Nunito', sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     color: #fff;
     line-height: 26px;
     max-width: 800px;
