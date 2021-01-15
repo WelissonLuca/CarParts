@@ -74,12 +74,12 @@
           <nav>
             <div class="menu">
               <a href="home" class="active">home</a>
-              <a href="home">about</a>
-              <a href="home">galery</a>
-              <a href="home">products</a>
-              <a href="home">megamenu</a>
-              <a href="home">shop</a>
-              <a href="home">contact</a>
+              <a href="about">about</a>
+              <a href="galery">galery</a>
+              <a href="products">products</a>
+              <a href="megamenu">megamenu</a>
+              <a href="shop">shop</a>
+              <a href="contact">contact</a>
             </div>
             <div class="utils">
               <a href=""><i class="fas fa-search"></i></a>
@@ -103,7 +103,7 @@
 
     <section id="about">
       <div class="container">
-        <div class="about">
+        <div class="column">
           <span class="subtitle">
             WHO WE ARE
           </span>
@@ -151,7 +151,7 @@
 
       <section id="popular">
       <div class="container">
-        <div class="popular">
+        <div class="column">
           <span class="subtitle">
             TOP RATED CATEGORIES
           </span>
@@ -327,7 +327,7 @@
 
      <section id="acessories">
       <div class="container">
-           <div class="acessories">
+           <div class="column">
              <span class="subtitle">
               CAR PARTS DETAILS
             </span>
@@ -408,7 +408,7 @@
 
      <section id="popular rated">
       <div class="container">
-        <div class="popular">
+        <div class="column">
           <span class="subtitle">
             Recent categories
           </span>
@@ -515,7 +515,7 @@
 
     <section id="galery">
       <div class="container">
-        <div class="galery">
+        <div class="column">
            <span class="subtitle">
             Our portfólio
           </span>
@@ -547,8 +547,78 @@
                 <div></div>
                 <div></div>
               </div>
+              
             </div>
+            
           </div>
+           <div class="circle-slide">
+                  <i class="fas fa-circle "></i>
+                  <i class="fas fa-circle active-slide"></i>
+                  <i class="fas fa-circle"></i>
+                </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <div class="column">
+           <span class="subtitle">
+            Clients feedback
+          </span>
+          <h2 class="title">Testimonials</h2>
+          <div class="decoration">
+            <div class="row"></div>
+              <i class="fas fa-camera-retro"></i>
+            <div class="row"></div>
+          </div>
+          <div class="testmonials-content">
+            <div class="left">
+              <span>I am Very happy with their work</span>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore id eligendi distinctio sint molestiae unde nobis deserunt architecto perferendis, voluptatum similique excepturi assumenda delectus voluptatem amet aut ducimus magni aperiam.
+              </p>
+              <strong>- James Martins</strong>
+              <div class="row"></div>
+              <div>
+                <div class="circle"></div>
+                <div class="circle active"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="right">
+              <span>Request a Quote</span>
+              <form action="">
+                <input 
+                type="text" 
+                name="name" 
+                id="name" 
+                placeholder="Name" r
+                equired>
+                <div>
+                  <input 
+                  type="email" 
+                  name="email" 
+                  id="email" 
+                  placeholder="Email" 
+                  required>
+                  <input 
+                  type="text" 
+                  name="subject" 
+                  id="subject" 
+                  placeholder="Subject" 
+                  required>
+              </div>
+                <textarea 
+                name="msg" 
+                id="msg" 
+                cols="30" 
+                rows="10"
+                placeholder="Message"
+                required
+                ></textarea>
+                <button class="button">SEND MESSAGE</button>
+              </form>
+            </div>
         </div>
       </div>
     </section>

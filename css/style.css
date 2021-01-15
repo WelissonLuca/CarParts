@@ -24,6 +24,13 @@ body {
     max-width: 1168px;
     margin: 0 auto;
 }
+.column {
+     padding: 80px 0 60px 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
 .button{
     font-family: 'Roboto',sans-serif;
     padding: 16px 30px;
@@ -219,16 +226,7 @@ body {
     max-width: 14%;
 }
 /* About */
-
-.about{
-    padding: 80px 0 60px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.about p{
+#about .column p{
     margin-top: 20px;
     max-width: 80%;
     font-size: 18px;
@@ -323,13 +321,7 @@ body {
     font-size: 16px;
 }
 /* popular */ 
-.popular {
-    padding: 80px 0 60px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 .cards{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -382,7 +374,7 @@ hr{
     color: #888888;
     margin-top: 10px;
 }
-.popular .button{
+#popular .button{
     margin-top: 40px;
     padding: 10px 36px;
     font-size: 16px;
@@ -390,13 +382,6 @@ hr{
 /* acessories */ 
 #acessories{
     background: #fafafa;
-}
-.acessories{
-    padding: 80px 0 60px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .acessories-content{
     display: grid;
@@ -442,19 +427,12 @@ hr{
 #galery{
     background: #fafafa;
 }
-.galery {
-     padding: 80px 0 60px 0;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-}
-.galery nav {
+#galery .column nav {
     margin-top: 50px;
     display: flex;
     justify-content: center;
 }
-.galery nav a{
+#galery .column nav a{
     margin-right: 4px;
     padding: 14px 36px;
     font-size: 14px;
@@ -464,7 +442,7 @@ hr{
     border: 1px solid #9b9b9b;
     transition: background 300ms;
 }
-.galery nav a:hover,.galery nav a.active{
+#galery .column nav a:hover,#galery .column nav a.active{
     background: #1e83ec;
     color: #fff;
 }
@@ -496,4 +474,96 @@ hr{
     height: 370px;
     background: #888888;
     margin: 0 0 20px 0;
+}
+
+/* testmonials */ 
+.testmonials-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.testmonials-content .left,.testmonials-content .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.testmonials-content .left{
+    
+    max-width: 60%;
+}
+.testmonials-content .left span,.testmonials-content .right span{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto',sans-serif;
+    align-self: start;
+    color: var(--primary-color-);
+
+}
+.testmonials-content .left p{
+    margin-top: 20px;
+    font-family: 'Nunito',sans-serif;
+    text-align: left;
+    line-height: 30px;
+    color: #888888;
+}
+.testmonials-content .left strong{
+    color: #1e83ec;
+    font-size: 16px;
+    font-family: 'Nunito';
+    font-style: italic;
+    align-self: flex-end;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+.testmonials-content .left .row{
+    width: 100%;
+    height: 2px;
+    background: #e6e4e4;
+    margin-top: 20px;
+}
+.testmonials-content .left div{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.testmonials-content .left div .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #888888;
+    margin-right: 40px;
+}
+.testmonials-content .left div .circle.active{
+    width: 120px;
+    height: 120px;
+    border: 4px solid #fff;
+    box-shadow: 0px 0px 0px 4px #9b9b9b;
+}
+.testmonials-content .right form{
+    margin-top: 20px;
+}
+.testmonials-content .right form input,.testmonials-content .right form textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 16px 8px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    color: #888888;
+    font-size: 16px;
+    font-family: 'Nunito',sans-serif;
+    outline: none;
+    resize: none;
+}
+.testmonials-content .right form div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.testmonials-content .right form .button{
+    padding: 16px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
 }
