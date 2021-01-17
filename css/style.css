@@ -31,6 +31,14 @@ body {
      align-items: center;
      justify-content: center;
 }
+.column p{
+    margin-top: 10px;
+    max-width: 80%;
+    font-size: 16px;
+    font-family: 'Nunito',sans-serif;
+    text-align: center;
+    color: #9b9b9b;
+}
 .button{
     font-family: 'Roboto',sans-serif;
     padding: 16px 30px;
@@ -226,7 +234,7 @@ body {
     max-width: 14%;
 }
 /* About */
-#about .column p{
+#about .about-content p{
     margin-top: 20px;
     max-width: 80%;
     font-size: 18px;
@@ -566,4 +574,173 @@ hr{
     font-size: 14px;
     border: none;
     cursor: pointer;
+}
+
+/* newslatter */
+
+.new-letter-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+}
+.new-letter-card .card{
+    width: 360px;
+    height: 250px;
+    background: #888888;
+    border-radius: 4px;
+}
+.new-letter-card span{
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    margin: 8px 0 0 0;
+}
+.new-letter-card div span, .new-letter-card p {
+    font-size: 12px;
+    font-family: 'Nunito',sans-serif;
+    text-align: left;
+    color: #888888;
+    margin-right: 8px;
+    
+}
+.new-letter-card div span i{
+    margin-right: 4px;
+    font-size: 14px;
+}
+.new-letter-card p{
+margin-bottom: 20px;
+}
+.new-letter-card .button{
+    padding: 10px 30px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.subscribe{
+    position: absolute;
+    top: -100px;
+    right: 500px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 60px;
+}
+
+.subscribe div span{
+    width: 100%;
+    color: #9b9b9b;
+    font-size: 14px;
+    font-family: 'Nunito',sans-serif;
+}
+.subscribe form div input{
+    padding: 21.5px 80px 20px 20px;
+    color: #888888;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #9b9b9b;
+    outline: none;
+}
+.subscribe form div button{
+    position: relative;
+    left: -6px;
+    padding: 20px 40px;
+    background: #f8c12c;
+    color: #222222;
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius:  0 20px  20px 0;
+    z-index: 1000;
+    cursor: pointer;
+    transition: background 300ms;
+}
+.subscribe form div button:hover{
+    
+    background: #f6c950;
+}
+/* footer */ 
+footer{
+    position: relative;
+    margin-top: 60px;
+    padding: 40px 0;
+    background: #000;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 120px;
+    margin-top: 30px;
+    
+}
+.footer-content {
+    color: #e6e4e4;
+}
+.footer-content img{
+    margin-bottom: 20px;
+}
+.footer-content p{
+    font-family: 'Nunito',sans-serif;
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 20px;
+
+}
+.footer-content a{
+    color: #f8c12c;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Nunito',sans-serif;
+    text-transform: uppercase;
+    transition: color 300ms;
+
+}
+.footer-content a:hover{
+    color: #f6c950;
+}
+.footer-content .social{
+    margin-top: 10px;
+    display: flex;
+}
+.footer-content .social i{
+    display: block;
+    border: 1px solid #f3f3f3;
+    padding: 10px ;
+    font-size: 16px;
+    margin-right: 8px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.footer-content .social i:hover{
+    background: #f8c12c;
+    color: #222222;
+}
+.footer-content .title{
+    margin-bottom: 40px;
+}
+.footer-content .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.footer-content .grid  span{
+    font-family: 'Nunito',sans-serif;
+    font-size: 14px;
+    color: #ededed;
+    margin-bottom: 20px;
+}
+.footer-content .grid  span i{
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.footer-content .grid  span::after{
+    display: table;
+    content: "";
+    width: 110%;
+    height: 1px;
+    background: #f3f3f3;
+    margin-top: 20px;
 }
